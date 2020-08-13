@@ -1,0 +1,63 @@
+Language Description #1 C++
+
+Consider the C++ programming language. (If you don't have experience with C++, feel free to use Java or something else for this question.) In your exer7.txt, indicate how C++ can be described with respect to each of these concepts we have discussed:
+
+Question: Indicate which version of the language you're talking about: C++11, C++17 (or Java 9, 10 etc).
+Answer: Language: C++17
+
+Question: Overall programming paradigm (imperative, functional, object oriented, logic programming, etc.).
+Answer: C++ is a multi-paradigm programming language supports single or mixed approaches using Procedural or Object-oriented programming and mixing in utilization of Generic and even Functional programming concepts.*
+
+Question: Compiled, interpreted, bytecode compiled, JIT compiled (for the most common tools: either GCC or Clang).
+Answer: Compiled with Clang
+
+Question: Static or dynamic types. Static or dynamic binding.
+Answer: C++ is statically typed. This means that the variables defined in a program will have a predefined memory space and is enforced during compile time. Dynamic typed languages have no idea what memory allocation is needed until runtime. Static typed languages are said to be more reliable as type errors are caught earlier during compile time. 
+Static binding refers to static, private and final methods that will be determined at compile time whereas dynamic binding refers to static, private and final methods being decided during runtime. An example is derived function that overrides a base class virtual function in C++.**
+
+Question: Strong or weak typing.
+Answer: C++ has strong typing
+
+Question: Manual memory management or garbage collected (and garbage collection algorithm).
+Answer: C++ has manual memory management. There is no garbage collector so when you allocate memory in the heap, you need to delete it when you are done with it or else you will have a memory leak.
+
+Question: Has first-class functions? Has closures?
+Answer: C++ does not have first class functions but it does allow you to pass function pointers.
+
+Question: What support for concurrent/parallel programming is available?
+Answer: There are standard thread libraries such as thread, pthread.
+
+================================================================================================================================================================================================================
+
+Language Description #2 PYTHON
+
+Consider the Python programming language. 
+
+Question: Indicate which version of the language you're talking about: C++11, C++17 (or Java 9, 10 etc).
+Answer: Language: Latest Python 3 Release - Python 3.8.3 - See https://www.python.org/downloads/windows/
+
+Question: Overall programming paradigm (imperative, functional, object oriented, logic programming, etc.).
+Answer: Python is a multi-paradigm programming language supports single or mixed approaches using Procedural or Object-oriented programming and mixing in utilization of Generic and even Functional programming concepts.*
+
+Question: Compiled, interpreted, bytecode compiled, JIT compiled (for the most common tools: either GCC or Clang).
+Answer: Python can be compiled but is mainly an interpreted language.
+
+Question: Static or dynamic types. Static or dynamic binding.
+Answer: Python is a dynamically typed language. Python interpreter does type checking only as code runs. The type of variable is allowed to change over its lifetime.***
+
+Question: Strong or weak typing.
+Answer: Python has Strong typing
+
+Question: Manual memory management or garbage collected (and garbage collection algorithm).
+Answer: There is a garbage collector in Python. No manual memory management.
+
+Question: Has first-class functions? Has closures?
+Answer: There are no first-class functions in Python. There are support closures.
+
+Question: What support for concurrent/parallel programming is available?
+Answer: Concurrent/parallel programming can be used with imported libraries such as spark/hadoop, threading, multiprocessing.
+
+Citations:
+*   https://en.wikibooks.org/wiki/C%2B%2B_Programming/Programming_Languages/Paradigms
+**  https://www.geeksforgeeks.org/virtual-function-cpp/
+*** https://realpython.com/lessons/dynamic-vs-static/

@@ -1,0 +1,8 @@
+The fib function takes a very long time to do such a simple calculation because it is essentially building a binary tree with height of the original number. If you count the nodes at every depth, you will notice that the amount of nodes doubles. This means that at height 33, there is roughly 2^33 nodes/calculations which is equal to 8.5 billion  ~ 9 billion calculations. Based on the speed of my computer clocked at ~3GHz, which is 3,000,000,000 Hz (3billion Hz) == 3 billion cycles per seconds. Assuming that the application is single threaded, and it takes 1 cycle per calculation, when you divide 9 billion calculations with 3 billion Hz, you get 3 seconds.
+
+Something Else
+The values of things is an infinite sequence of Fibonacci numbers. 
+
+The lazy evaluation makes sure that only the last element of the output array is calculated because its the only thing that is needed to be displayed therefore all the other recursive calculations are not being done.
+
+These things are calculated by using the previously calculated values and adding the tail things to them. Essentially the amount of work being done is O(n) which is way faster than the 2^n naïve recursive algorithm.
